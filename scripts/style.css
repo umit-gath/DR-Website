@@ -1,0 +1,552 @@
+:root {
+    --PriColor:  #282A35;
+     --SecColor:  #04aa6d;
+  }
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+::selection{
+    background-color:  var(--SecColor);
+    color: white;
+}
+
+/*//////////////////ScrollBar Customization*/
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background:  var(--SecColor);
+    border-radius: 8px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+/*//////////////////ScrollBar Customization*/
+
+
+/* //////////// navbar styling*/
+.nav-item{
+    margin-right: 30px;
+    font-size: 22px;
+}
+
+.navbar {
+    background-color: transparent;
+}
+
+  .navbar-nav .nav-link , .navbar-light .navbar-nav .nav-link.active{
+    color: rgb(255, 255, 255);
+    transition: ease-in-out .2s;
+}
+
+ .navbar-nav .nav-link:hover , .navbar-light .navbar-nav .nav-link.active:hover {
+    background-color:  var(--SecColor);
+    color: rgb(255, 255, 255);
+    transform: scale(1.1);
+    transition: ease-in-out .2s;
+}
+
+
+ .navbar-brand{
+    color: var(--SecColor);
+    font-size: 28px;
+    transition: ease-in-out .2s;
+}
+
+ .navbar-brand:hover{
+    color: var(--SecColor);
+    font-size: 28px;
+    transform: scale(1.1);
+    transition: ease-in-out .2s;
+}
+.fa-align-justify:before {
+    font-size: 30px;
+    color: var(--SecColor);
+}
+
+.navbar-toggler{
+    border-color: white;
+}
+
+.login-btn{
+    color: rgb(255, 255, 255);
+    transition: ease-in-out .2s;
+    text-decoration: none;
+    font-size: 22px;
+    width: 100%;
+    margin-left: 30px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    padding: 10px;
+    display: block;
+}
+
+a:hover.login-btn{
+    background-color: var(--SecColor);
+    color: rgb(255, 255, 255);
+    transform: scale(1.1);
+    transition: ease-in-out .2s;
+    
+}
+
+@media screen and (min-width: 992px) {
+.navbar-expand-lg .navbar-collapse {
+    justify-content: space-between;
+}
+}
+
+@media screen and (max-width: 992px) {
+    .navbar-collapse{
+        background-color: var(--PriColor);
+    }
+    }
+
+.navbar-nav .dropdown-menu {
+    background-color: var(--PriColor) }
+ 
+ .dropdown-item {
+     color: white;
+     text-align: center;
+     font-size: 22px;
+ }
+
+ header{
+    background-image: url('../images/umit.PNG');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+ }
+
+ #NavBar{
+position: fixed;
+top: 0px;
+z-index: 10001;
+width: 100%;
+ }
+
+ /* Used in Jquery Animation */
+ .AnimateBlack{
+     background-color: var(--PriColor);
+         transition: ease-in-out 1s;
+ }
+
+ .AnimateTrans{
+    background-color: transparent;
+   transition: ease-in-out 1s;
+}
+
+/* //////////// navbar styling*/
+
+
+/* //////////// footer*/
+
+footer{
+    background-color: var(--PriColor);
+    padding-bottom: 20px;
+    font-size: 22px;
+}
+
+/* //////////// footer*/
+
+/* //////////// brief section*/
+
+.brief-sec{
+
+    height: 550px;
+    
+}
+
+.brief-sec p{
+    color: white;
+    font-size: 85px;
+    filter: drop-shadow(16px 16px 20px rgb(0, 0, 0));
+    text-align: center;
+}
+
+.brief-sec p span{
+    color: white;
+    font-size: 25px;
+    background-color:  var(--SecColor);
+    padding: 8px;
+    filter: drop-shadow(8px 8px 8px rgb(0, 0, 0));
+}
+
+@media screen and (max-width: 992px) {
+    .brief-sec p{
+        font-size: 55px;    }
+
+        .brief-sec {
+            height: 350px; 
+        } 
+
+        .brief-sec p span{
+            font-size: 12px;
+        }
+}
+
+/* //////////// brief section*/
+
+
+/* Dr Salem Sati Brief   */
+#dr-sati{
+    margin: 35px;
+    padding: 15px;
+    border-radius: 30px;
+    background-color: white;
+    overflow: hidden;
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.336));
+    position: relative;
+    top: 0;
+    transition: top ease 2s;
+}
+
+#dr-sati:hover{
+   top:-130px;
+
+}
+
+#dr-image{
+     border-radius: 50%;
+     border-color:  var(--SecColor);
+     border-width: 1px;
+     border-style: solid;
+}
+
+#dr-sati #info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+#dr-sati #info .row p{
+text-align: left;
+font-size: 25px;
+color: black;
+display: inline-block;
+margin-left: 25px;
+margin-right: 5px;
+    
+}
+
+#dr-sati #info .row p span{
+    text-align: center;
+    font-size: 25px;
+    color: var(--SecColor);
+     font-weight: bold;
+    }
+
+    
+#dr-sati #info .row p .profiles{
+    text-align: center;
+    font-size: 25px;
+    color: var(--SecColor);
+     font-weight: bold;
+     text-decoration: none;
+    }
+
+    #dr-sati #info .row  #Email{
+        text-align: center;
+        font-size: 25px;
+        color: black;
+         text-decoration: none;
+         display: inline-block;
+        }
+
+    @media screen and (max-width: 992px) {
+
+        #dr-image{
+        margin-bottom: 20px;
+       }
+
+       
+    #dr-sati #info .row  #Email{
+        text-align: center;
+        font-size: 14px;
+        color: black;
+         text-decoration: none;
+         display: inline-block;
+        }
+
+        #dr-sati #info .row p span{
+            text-align: center;
+            font-size: 22px;
+            color: var(--SecColor);
+             font-weight: bold;
+            }
+
+            #dr-sati #info .row p{
+                text-align: left;
+                font-size: 22px;
+                color: black;
+                display: inline-block;
+                margin-left: 25px;
+                margin-right: 5px;
+                    
+                }
+    }
+/* Dr Salem Sati Brief   */
+
+
+/* Courses   */
+
+#courses{
+    background-color: white;
+}
+
+#courses >p{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--PriColor);
+}
+
+#courses .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+    background-color: white;
+}
+
+#courses .row .col-lg-2{
+    margin-right: 15px;
+    margin-top: 25px;
+    margin-bottom: 35px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    font-size: 40px;
+    text-decoration: none;
+    color:var(--SecColor);
+    border-radius: 15px;
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.534));
+    transition: 1s ease-in-out;
+}
+#courses .row .col-lg-2:hover{
+    transform: scale(1.1);
+    transition: 1s ease-in-out;
+    color:var(--PriColor);
+}
+#courses .row .col-lg-2 p{
+   text-align: center;
+   margin-top: 20px;
+}
+
+#courses .row .col-lg-2  i{
+    display: block;
+    text-align: center;
+    
+ }
+
+/* Courses   */
+
+/*  Projects*/
+
+#projects{
+    background-image: url('../images/projects.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#projects >p{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    padding-top: 50px;
+    filter: drop-shadow(0px 0px 5px rgb(255, 255, 255));
+}
+#projects .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 25px;
+    background-color: transparent;
+}
+
+#projects .row .col-lg-5{
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.158);
+    font-size: 40px;
+    text-decoration: none;
+    color:white;
+    border: white 1px solid;
+    border-radius: 15px;
+    filter: drop-shadow(0px 0px 5px rgb(255, 255, 255));
+    transition: 1s ease-in-out;
+}
+#projects .row .col-lg-5:hover{
+    transform: scale(1.1);
+    transition: 1s ease-in-out;
+    color:var(--SecColor);
+    border: var(--SecColor) 1px solid;
+    filter: drop-shadow(0px 0px 5px var(--SecColor));
+    background-color: rgba(35, 245, 105, 0.158);
+}
+#projects .row .col-lg-5 p{
+   text-align: center;
+   margin-top: 20px;
+}
+
+#projects .row .col-lg-5  i{
+    display: block;
+    text-align: center;
+    
+ }
+
+/*  Projects*/
+
+
+/*  Publications*/
+#publications{
+    background-color: white;
+}
+
+#publications >p{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--PriColor);
+}
+
+#publications .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+    background-color: white;
+}
+
+#publications .row .col-lg-5{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    font-size: 40px;
+    text-decoration: none;
+    color:var(--SecColor);
+    border-radius: 15px;
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.534));
+    transition: 1s ease-in-out;
+}
+#publications .row .col-lg-5:hover{
+    transform: scale(1.1);
+    transition: 1s ease-in-out;
+    color:var(--PriColor);
+}
+#publications .row .col-lg-5 p{
+   text-align: center;
+   margin-top: 20px;
+}
+
+#publications .row .col-lg-5  i{
+    display: block;
+    text-align: center;
+    
+ }
+/*  Publications*/
+
+
+/*  Others*/
+#others{
+    background-color: white;
+}
+
+#others >p{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--PriColor);
+}
+
+#others .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+    background-color: white;
+}
+
+#others .row .col-lg-5{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    font-size: 40px;
+    text-decoration: none;
+    color:var(--SecColor);
+    border-radius: 15px;
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.534));
+    transition: 1s ease-in-out;
+}
+#others .row .col-lg-5:hover{
+    transform: scale(1.1);
+    transition: 1s ease-in-out;
+    color:var(--PriColor);
+}
+#others .row .col-lg-5 p{
+   text-align: center;
+   margin-top: 20px;
+}
+
+#others .row .col-lg-5  i{
+    display: block;
+    text-align: center;
+    
+ }
+/*  Others*/

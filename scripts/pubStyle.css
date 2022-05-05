@@ -1,0 +1,45 @@
+:root {
+    --PriColor:  #282A35;
+     --SecColor:  #04aa6d;
+  }
+
+  .container{
+      margin-top: 30px;
+      margin-bottom: 30px;
+  }
+
+.item{
+    background-color: white;
+    filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.253));
+    border-radius: 15px;
+    padding: 20px;
+    transition: 1s ease-in-out;
+    margin-bottom: 30px;
+    display: flex;
+
+}
+
+.item:hover{
+    transition: 1s ease-in-out;
+    transform: scale(0.95);
+}
+
+  .item a
+  {
+      color: #04aa6d;
+      font-size: 26px;
+  }
+
+
+
+  .title{
+   text-align: center;
+   color: #04aa6d;
+   font-size: 26px;
+   font-weight: bold;
+   margin-top: 20px;
+  }
+
+  hr{
+      color: var(--SecColor);
+  }

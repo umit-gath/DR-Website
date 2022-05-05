@@ -9,8 +9,9 @@
     <link rel="icon" type="image/x-icon" href="images/logo.png"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="scripts/style.css"/>
-    <!-- Home CSS -->
-    <link rel="stylesheet" type="text/css" href="scripts/homeStyle.css"/>
+    <!-- Courses CSS -->
+    <link rel="stylesheet" type="text/css" href="scripts/loginStyle.css"/>
+
     <title>Dr.Salem Sati</title>
 
       <!-- Facebook Meta -->
@@ -26,8 +27,8 @@
         <i class="fa-solid fa-arrow-up"></i>
     </a>
 
-    <header data-back="umit">
-        <nav id="NavBar" class="navbar navbar-expand-lg">
+    <header>
+        <nav id="NavBar" class="navbar navbar-expand-lg AnimateBlack">
     
             <div class="container-fluid">
               <a class="navbar-brand" href="#">Dr.Salem</a>
@@ -50,7 +51,7 @@
                         <i class="fa-solid fa-book"></i>  Courses
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <li><a class="dropdown-item" href="voip.html">VOIP</a></li>
+                      <li><a class="dropdown-item" href="#">VOIP</a></li>
                       <li><a class="dropdown-item" href="#">Networks Lab</a></li>
                       <li><a class="dropdown-item" href="#">Security</a></li>
                       <hr/>
@@ -108,222 +109,41 @@
           </nav>
     
 
-   
-
-
-<section class="brief-sec d-flex align-items-center justify-content-center">
-    <p>
-        Dr.Salem Sati
-<br>
-        <span>
-            Instructor At University Of Misurata Information Faculity
-        </span>
-    </p>
-</section>
-
-
-
-
-
 
 </header>
 
 <div id="main">
 
+    <div class="container">
 
 
-<section id="dr-sati">
-<div class="row ">
+<div class=" login-panel">
 
-    <div class=" col-lg-3 d-flex align-items-center justify-content-center">
-        <img class="img-fluid" id="dr-image"  src="images/personal.png" />
+    <div class="login-logo row">
+        <i class="fa-solid fa-circle-user"></i>
     </div>
 
-
-    <div id="info" class="col-lg-9">
-        
-<div class="row"> <p>   Dr.Salem Sati</p>   </div>
-<div class="row"> <p>  <span>Office:</span> &nbsp; Instructors Hall  </div>
-    <div class="row"> <p>  <span>Office Hours:</span> &nbsp; Sunday 10:00AM - 12:00PM  </div>
-<div class="row"> <p>  <span>Research Interest:</span> &nbsp; NETWORKING - ROUTING - MANET - DTN - OppNet - IoT - WSN</p>    </div>
-<div class="row"> 
-    <p>  <span>CISCO ID:</span> &nbsp; 5539278 <img style="max-width: 100px; display: inline;"  src="images/cisco-5-years.png" /></p> 
-</div>
-
-<div class="row">
-    <p>  <span>EMAIL:</span> &nbsp; <a id="Email" href="mailto:salem.sati@it.misuratau.edu.ly">salem.sati@it.misuratau.edu.ly</a></p>
-</div>  
-
-<div class="row" style="display: flex; justify-content: space-around;"> 
-    <div class="col-lg-6">
-        <p> <a class="profiles" href=""> HHU Profile </a></p> 
-    </div>
-    <div class="col-lg-6">
-        <p> <a class="profiles" href=""> Google Scholar Profile </a></p> 
-    </div>
-   </div>
-
-</div>
-
-</div>
-</section>
-
-<hr/>
-
-<section id="courses">
-<p>Courses</p>
-
-<div class="row">
-
-    <a href="#" class="col-lg-2">
-        <i class="fa-solid fa-network-wired"></i>
-        <p>Networks Lab</p>
-</a>
-
-<a href="#" class="col-lg-2">
-        <i class="fa-solid fa-tty"></i>
-        <p>VOIP</p>
-</a>
-
-<a href="#" class="col-lg-2">
-    <i class="fa-solid fa-shield"></i>
-        <p>Security</p>
-</a>
-
-
-
-
-</div>
-
-<hr>
-<p>Previous</p>
-
-
-<div  class="previous row">
-
-    <a href="#" class="col-lg-2">
-        <i class="fa-solid fa-laptop-code"></i>
-        <p>Computer Assembly</p>
-</a>
-
-<a href="#" class="col-lg-2">
-    <i class="fa-solid fa-memory"></i>
-        <p>Computer Architecture</p>
-</a>
-
-
-
-
-</div>
-
-</section>
-
-<hr/>
-
-
-<section id="projects">
-
-    <p>Projects</p>
-
-    <div class="row">
-
-        <a href="#" class="col-lg-5">
-            <i class="fa-solid fa-graduation-cap"></i>
-                <p>Bachelor</p>
-        </a>
-
-        <a href="#" class="col-lg-5">
-            <i class="fa-solid fa-user-tie"></i>
-                <p>Master</p>
-        </a>
-
+    <div class="login-user row">
+    <p>Username :</p>
+      <input type="text" placeholder="Enter Your Username"/>
     </div>
 
-</section>
+    <div class="login-pass row">
+        <p>Password :</p>
+          <input type="password" placeholder="Enter Your Password" />
+        </div>
 
-<hr/>
+        <div class="login-btn row">
+         <input type="submit" value="Login" class="btn btn-success"/>
+         <a href="cp.html" class="btn btn-danger" style="margin-top: 20px;"> Control Panel </a>
 
-
-<section id="publications">
-<p>Publications</p>
-
-<div class="row">
-
-    <a href="#" class="col-lg-3">
-        <i class="fa-solid fa-people-group"></i>
-        <p>Conferences</p>
-</a>
-
-<a href="#" class="col-lg-3">
-    <i class="fa-solid fa-book-atlas"></i>
-        <p>Journals</p>
-</a>
-
-<a href="#" class="col-lg-3">
-    <i class="fa-solid fa-chalkboard-user"></i>
-        <p>Comities</p>
-</a>
-
+        </div>
 
 </div>
 
-</section>
 
 
-<hr/>
-
-
-<section id="others">
-<p>Others</p>
-
-<div class="row">
-
-    <div href="#" class="col-lg-5 cisco">
-        <img src="images/cisco.png" class="cisco-logo"/>
-        <p>CISCO Courses</p>
-        <ul>
-        <li><a href=""> CCNA 7: Intro To Networks </a></li>
-        <li><a href=""> CCNA 7: Switching , Routing , and Wireless Essentials </a></li>
-        <li><a href=""> CCNA 7: Enterprise Networking , Security , and Automation </a></li>
-        <li><a href=""> IT Essentials - PC Hardware & Software </a></li>
-        <li><a href="" > CCNA R&S 1 : Intro To Networks  </a></li>
-        <li><a href=""> CCNA R&S 2 : Routing and Switching Essentials</a></li>
-        <li><a href=""> CCNA R&S 3 : Scaling Networks</a></li>
-        <li><a href=""> CCNA R&S 4 : Connecting Networks</a></li>
-        <li><a href=""> Introduction To Internet Of Things (IoT) </a></li>
-        <li><a href=""> Cybersecurity Essentials </a></li>
-        </ul>
     </div>
-
-<div href="#" class="col-lg-5">
-    <i class="fa-solid fa-screwdriver-wrench"></i> 
-        <p>Tools</p>
-        <ul>
-            <li><a href=""> Wireshark </a></li>
-            <li><a href=""> Packet tracer </a></li>
-            <li><a href=""> GNS3 </a></li>
-            <li><a href=""> VIRL </a></li>
-            <li><a href="" > Ethereal  </a></li>
-            <li><a href=""> Router Image 7200 </a></li>
-            <li><a href=""> Extra Router images for GNS3</a></li>
-            <li><a href=""> Putty </a></li>
-            <li><a href=""> Tera Term  </a></li>
-            <li><a href=""> NS2.35 </a>
-               &nbsp;  <a href=""><i class="fa-brands fa-youtube"></i> </a> 
-            </li>
-            <li><a href=""> NS3.35 </a>
-                &nbsp; <a href=""><i class="fa-brands fa-youtube"></i> </a> 
-            </li>
-            <li><a href=""> Firefox MikroTik </a> </li>
-            <li><a href=""> CCNA v7 Presentation </a></li>
-            </ul>
-</div>
-
-
-</div>
-
-</section>
-
 
 </div>
 
@@ -339,7 +159,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script defer  src="https://kit.fontawesome.com/e0b883298f.js" crossorigin="anonymous"></script>
-    <script  src="scripts/script.js" crossorigin="anonymous"></script>
+
 </body>
 
 </html>

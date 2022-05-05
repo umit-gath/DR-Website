@@ -1,0 +1,79 @@
+:root {
+    --PriColor:  #282A35;
+     --SecColor:  #04aa6d;
+  }
+
+
+body{
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../images/umit2.PNG');
+}
+
+
+  /* Login Page */
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 130px;
+}
+
+
+  .login-panel{
+
+    padding: 50px;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    background-color: var(--PriColor);
+    filter: drop-shadow(0px 0px 8px rgb(0, 0, 0));
+
+
+  }
+
+  .login-logo{
+
+    font-size: 150px;
+    color: #04aa6d;
+    margin-bottom: 20px;
+  }
+
+  .login-user{
+      color: white;
+      font-size: 19px;
+      margin-bottom: 25px;
+  }
+
+  .login-pass{
+    color: white;
+    font-size: 19px;
+    margin-bottom: 45px;
+}
+
+.login-panel .login-btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    margin: 0;
+    padding:0;
+}
+
+.row input[type="text"] {
+    background-color:var(--PriColor);
+    border-style: none;
+    border-bottom: var(--SecColor) solid 1px;
+    color: white;
+}
+
+.row input[type="password"] {
+    background-color:var(--PriColor);
+    border-style: none;
+    border-bottom: var(--SecColor) solid 1px;
+    color: white;
+}

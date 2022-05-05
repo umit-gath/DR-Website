@@ -1,0 +1,125 @@
+:root {
+    --PriColor:  #282A35;
+     --SecColor:  #04aa6d;
+  }
+
+body{
+    background-color: rgb(238, 238, 238);
+}
+
+
+aside{
+    position: fixed;
+    left: 0;
+    width: 350px;
+    height: 100%;
+    background-color: var(--PriColor);
+    z-index: 1001;
+    transition: 1s ease-in-out;
+}
+
+.content{
+    margin-left: 350px;
+    transition: 1s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+aside .items ul{
+    list-style-type: none;
+}
+
+aside .logo{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+
+aside .logo p{
+font-size: 65px;
+color: var(--SecColor);
+text-align: center;
+margin-bottom: 40px;
+display: inline-block;
+margin-left: 15px;
+}
+
+
+
+aside .items ul li{
+    
+    margin-bottom: 30px;
+}
+
+aside .items ul li a{
+    font-size: 22px;
+    text-decoration: none;
+    color: white;
+    transition: 1s ease-in-out;
+}
+
+aside .items ul li:hover a{
+    color: var(--SecColor);
+    transition: 1s ease-in-out;
+}
+
+aside .items ul li p{
+  display: inline-block;
+}
+
+@media screen and (max-width: 992px) {
+
+    aside{
+        position: fixed;
+        left: 0;
+        width: 100px;
+        height: 100%;
+        background-color: var(--PriColor);
+        z-index: 1001;
+        transition: 1s ease-in-out;
+    }
+
+    .content{
+        margin-left: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transition: 1s ease-in-out;
+    }
+
+    aside .logo p{
+        font-size: 65px;
+        color: var(--SecColor);
+        text-align: center;
+        margin-bottom: 40px;
+        display: inline-block;
+        margin-left: 12px;
+        }
+
+        
+    aside .logo a{
+display: none;
+        }
+
+        aside .items ul li .titles{
+            display: none;
+          }
+
+
+          aside .items ul li{
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+
+        aside .items{
+display: flex;
+flex-direction: column;
+align-items: center;
+        }
+
+}

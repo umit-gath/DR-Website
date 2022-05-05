@@ -1,0 +1,381 @@
+
+/* Dr Salem Sati Brief   */
+#dr-sati{
+    margin: 35px;
+    padding: 15px;
+    border-radius: 30px;
+    background-color: white;
+    overflow: hidden;
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.336));
+    position: relative;
+    top: 0;
+    transition: top ease 2s;
+}
+
+#dr-sati:hover{
+   top:-130px;
+
+}
+
+#dr-image{
+     border-radius: 50%;
+     border-color:  var(--SecColor);
+     border-width: 1px;
+     border-style: solid;
+}
+
+#dr-sati #info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+#dr-sati #info .row p{
+text-align: left;
+font-size: 25px;
+color: black;
+display: inline-block;
+margin-left: 25px;
+margin-right: 5px;
+    
+}
+
+#dr-sati #info .row p span{
+    text-align: center;
+    font-size: 25px;
+    color: var(--SecColor);
+     font-weight: bold;
+    }
+
+    
+#dr-sati #info .row p .profiles{
+    text-align: center;
+    font-size: 25px;
+    color: var(--SecColor);
+     font-weight: bold;
+     text-decoration: none;
+    }
+
+    #dr-sati #info .row  #Email{
+        text-align: center;
+        font-size: 25px;
+        color: black;
+         text-decoration: none;
+         display: inline-block;
+        }
+
+    @media screen and (max-width: 992px) {
+
+        #dr-image{
+        margin-bottom: 20px;
+       }
+
+       
+    #dr-sati #info .row  #Email{
+        text-align: center;
+        font-size: 14px;
+        color: black;
+         text-decoration: none;
+         display: inline-block;
+        }
+
+        #dr-sati #info .row p span{
+            text-align: center;
+            font-size: 22px;
+            color: var(--SecColor);
+             font-weight: bold;
+            }
+
+            #dr-sati #info .row p{
+                text-align: left;
+                font-size: 22px;
+                color: black;
+                display: inline-block;
+                margin-left: 25px;
+                margin-right: 5px;
+                    
+                }
+    }
+/* Dr Salem Sati Brief   */
+
+
+/* Courses   */
+
+#courses{
+    background-color: white;
+}
+
+#courses >p{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--PriColor);
+}
+
+#courses .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+    background-color: white;
+}
+
+#courses .row .previous{
+    justify-content:space-around;
+}
+
+#courses .row .col-lg-2{
+    margin-right: 15px;
+    margin-top: 25px;
+    margin-bottom: 35px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    font-size: 40px;
+    text-decoration: none;
+    color:var(--SecColor);
+    border-radius: 15px;
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.534));
+    transition: 1s ease-in-out;
+}
+#courses .row .col-lg-2:hover{
+    transform: scale(1.1);
+    transition: 1s ease-in-out;
+    color:var(--PriColor);
+}
+#courses .row .col-lg-2 p{
+   text-align: center;
+   margin-top: 20px;
+}
+
+#courses .row .col-lg-2  i{
+    display: block;
+    text-align: center;
+    
+ }
+
+/* Courses   */
+
+/*  Projects*/
+
+#projects{
+    background-image: url('../images/projects.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#projects >p{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    padding-top: 50px;
+    filter: drop-shadow(0px 0px 5px rgb(255, 255, 255));
+}
+#projects .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 25px;
+    background-color: transparent;
+}
+
+#projects .row .col-lg-5{
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.158);
+    font-size: 40px;
+    text-decoration: none;
+    color:white;
+    border: white 1px solid;
+    border-radius: 15px;
+    filter: drop-shadow(0px 0px 5px rgb(255, 255, 255));
+    transition: 1s ease-in-out;
+}
+#projects .row .col-lg-5:hover{
+    transform: scale(0.95);
+    transition: 1s ease-in-out;
+    color:var(--SecColor);
+    border: var(--SecColor) 1px solid;
+    filter: drop-shadow(0px 0px 5px var(--SecColor));
+    background-color: rgba(35, 245, 105, 0.158);
+}
+#projects .row .col-lg-5 p{
+   text-align: center;
+   margin-top: 20px;
+}
+
+#projects .row .col-lg-5  i{
+    display: block;
+    text-align: center;
+    
+ }
+
+/*  Projects*/
+
+
+/*  Publications*/
+#publications{
+    background-color: white;
+}
+
+#publications >p{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--PriColor);
+}
+
+#publications .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+    background-color: white;
+}
+
+#publications .row .col-lg-3{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    font-size: 40px;
+    text-decoration: none;
+    color:var(--SecColor);
+    border-radius: 15px;
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.534));
+    transition: 1s ease-in-out;
+}
+#publications .row .col-lg-3:hover{
+    transform: scale(0.95);
+    transition: 1s ease-in-out;
+    color:var(--PriColor);
+}
+#publications .row .col-lg-3 p{
+   text-align: center;
+   margin-top: 20px;
+}
+
+#publications .row .col-lg-3  i{
+    display: block;
+    text-align: center;
+    
+ }
+/*  Publications*/
+
+
+/*  Others*/
+#others{
+    background-color: white;
+}
+
+#others >p{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--PriColor);
+}
+
+#others .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+    background-color: white;
+}
+
+#others .row .col-lg-5{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    font-size: 40px;
+    text-decoration: none;
+    color:var(--PriColor);
+    border-radius: 15px;
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.534));
+    transition: 1s ease-in-out;
+}
+#others .row .col-lg-5:hover{
+    transform: scale(0.95);
+    transition: 1s ease-in-out;
+    color:var(--SecColor);
+}
+#others .row .col-lg-5 p{
+   text-align: center;
+   margin-top: 20px;
+}
+
+#others .row .col-lg-5  i{
+    display: block;
+    text-align: center;
+    
+ }
+#others .row .cisco-logo{
+    width: 150px;
+    height: auto;
+}
+
+#others .row .col-lg-5 ul{
+    background-color: rgba(85, 85, 85, 0.062);
+    border-radius: 10px;
+    color: black;
+}
+
+#others .row .col-lg-5 ul li a{
+    color: black;
+    transition: 1s ease-in-out;
+
+}
+
+#others .row .col-lg-5 ul li a:hover{
+    color: var(--SecColor);
+    transition: 1s ease-in-out;
+}
+
+#others .row .col-lg-5 ul li .fa-youtube{
+    color: red;
+    display: inline;
+    margin-left: 6px;
+    text-decoration: none;
+}
+/*  Others*/

@@ -24,6 +24,8 @@ $(window).scroll(function() {
 
 });
 
+$('a').attributes
+
 
 $("#BackToTop").click(function() {
     $("html, body").animate({
@@ -31,4 +33,4 @@ $("#BackToTop").click(function() {
     },1000);
   });
 
-  
+

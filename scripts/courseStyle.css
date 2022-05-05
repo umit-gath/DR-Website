@@ -1,0 +1,61 @@
+:root {
+    --PriColor:  #282A35;
+     --SecColor:  #04aa6d;
+  }
+
+.container{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.card .card-header p{
+    color:var(--SecColor);
+    font-size: 26px;
+    
+}
+
+.card .card-body li a{
+    color: black;
+    font-size: 24px;
+}
+
+.card .card-body p{
+    color: black;
+    font-size: 24px;
+}
+
+table{
+    vertical-align: middle;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.container .register{
+    text-align: center;
+     vertical-align: middle;
+      margin-bottom: 20px;
+       font-size: 26px;
+}
+
+.container .register a{
+   text-decoration: none;
+   background-color: var(--SecColor);
+   color: white;
+   padding: 20px;
+   border-radius: 10px;
+   transition: 0.5s ease-in-out;
+   display: inline-block;
+}
+
+.container .register a:hover{
+    background-color:#026e47;
+    transition: 0.5s ease-in-out;
+ }
+
+ .container .card-body b{
+     font-size: 22px;
+ }
+
+ .container .card-body a{
+    font-size: 22px;
+}

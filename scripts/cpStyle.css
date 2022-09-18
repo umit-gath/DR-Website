@@ -20,6 +20,7 @@ aside{
 
 .content{
     margin-left: 350px;
+    margin-right: 40px;
     transition: 1s ease-in-out;
     display: flex;
     justify-content: center;
@@ -27,6 +28,20 @@ aside{
     flex-direction: column;
 }
 
+
+.content .buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.content .buttons a{
+    display: block;
+    margin-top: 30px;
+    width: 180px;
+}
 
 aside .items ul{
     list-style-type: none;
@@ -71,6 +86,17 @@ aside .items ul li p{
   display: inline-block;
 }
 
+
+#stu .table thead th:last-child{
+color: red;
+background-color: #282A35;
+}
+
+#stu .table tbody tr td:last-child{
+    color: red;
+    background-color: #282A35;
+    box-shadow: none;
+    }
 @media screen and (max-width: 992px) {
 
     aside{
